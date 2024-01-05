@@ -6,38 +6,40 @@
   </head>
   <body class="page">
     <header class="header">
-      <img class="header-image" alt="eisenhower matrix" src="./eisenhower-matrix.jpg">
-      <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      <div class="header__wrapper">
+        <img class="header__image" alt="eisenhower matrix" src="./eisenhower-matrix.jpg">
+        <a class="header__info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      </div>
     </header>
     <main class="main">
-      <section id="new-task-section">
-        <label class="new-task-label" for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
+      <div id="task-form">
+        <label class="task-form__label" for="new-task">Add Item</label>
+        <div class="task-form__input task-row-wrapper">
           <input id="new-task" class="task" type="text">
           <button class="button">Add</button>
         </div>
-      </section>
+      </div>
       <h3 class="heading-3">Todo</h3>
-      <ul id="incomplete-tasks">
+      <ul class="tasks" id="incomplete-tasks">
         <li class="task-item">
-          <input type="checkbox" class="check-input">
-          <label class="task-label">Pay Bills</label>
-          <input type="text" class="task-input">
-          <button class="button edit">Edit</button>
-          <button class="button delete">
+          <input type="checkbox" class="task-item__check">
+          <label class="task-item__label">Pay Bills</label>
+          <input type="text" class="task-item__input">
+          <button class="button button_edit">Edit</button>
+          <button class="button button_delete">
             <img alt="" src="./remove.svg">
           </button>
         </li>
-        <li class="task-item edit-mode">
-          <input type="checkbox" class="check-input">
-          <label class="task-label">Go Shopping</label>
+        <li class="task-item task-item_edit">
+          <input type="checkbox" class="task-item__check">
+          <label class="task-item__label">Go Shopping</label>
           <input 
             type="text" 
-            value="go-shopping" 
-            class="task-input"
+            value="Go Shopping" 
+            class="task-item__input"
           >
-          <button class="button edit">Save</button>
-          <button class="button delete">
+          <button class="button button_edit">Save</button>
+          <button class="button button_delete">
             <img alt="" src="./remove.svg">
           </button>
         </li>
@@ -45,11 +47,11 @@
       <h3>Completed</h3>
       <ul id="completed-tasks">
         <li class="task-item">
-          <input type="checkbox" class="check-input" checked>
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task-input">
-          <button class="button edit">Edit</button>
-          <button class="button delete">
+          <input type="checkbox" class="task-item__check" checked>
+          <label class="task-item__label">See the Doctor</label>
+          <input type="text" class="task-item__input">
+          <button class="button button_edit">Edit</button>
+          <button class="button button_delete">
             <img alt="" src="./remove.svg">
           </button>
         </li>
